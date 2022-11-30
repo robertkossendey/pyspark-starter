@@ -1,0 +1,19 @@
+repos:
+  - repo: local
+    hooks:
+    - id: pylint
+      name: pylint
+      entry: pylint src/
+      pass_filenames: false
+      language: system
+      args: ["--rcfile=.pylintrc"]
+    - id: pytest
+      name: pytest
+      entry: pytest test/
+      pass_filenames: false
+      language: system
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: detect-aws-credentials
+      - id: detect-private-key

@@ -1,0 +1,55 @@
+.DS_Store
+
+# Node Specific
+node_modules
+/dist
+
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+# local env files
+.env
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Reports
+**/cucumber-report.*
+
+# Editor directories and files
+.idea
+*.iml
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# Databricks extensions
+.dbx/lock.json
+
+# local mlflow files
+mlruns/
+
+# Customs
+build
+dist
+*.egg-info/
+/.build
+__pycache__
+*.crc

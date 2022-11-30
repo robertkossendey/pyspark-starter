@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+python-dotenv = "*"
+pre-commit = "*"
+pylint = "*"
+pytest = "*"
+pytest-mock = "*"
+
+[packages]
+boto3 = "*"
+chispa = "*"
+pyspark = "*"
+delta-spark = "*"
+
+[requires]
+python_version = "3.9"
